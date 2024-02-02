@@ -1,0 +1,47 @@
+
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #f1f1f1;
+    font-family: sans-serif;
+}
+body::before{
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 15px;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+}
+input{
+    background: rgba(255, 255, 255, .1);
+    border: none;
+    padding: 5px;
+    font-size: 2rem;
+    color: #f1f1f1;
+}
+button{
+    width: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
